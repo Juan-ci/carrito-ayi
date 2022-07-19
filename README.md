@@ -2,15 +2,16 @@
 
 Primer tarea grupal AYI Academy. Producto, contador, stock
 
-Integrnates:
-Rodrigo Egea.
-Maria Gimena Binaghi.
-Silvia Otaka.
-Nicolas Clemente.
-Juan Cruz.
-Leonel Altamirano.
-Josias Pazzelli.
-Santiago Ludu.
-German Furfori.
-Juan Nieto.
-Fernanda Balduzzi.
+<h4> Colaboradores: </h4>
+<ul>
+<li>Rodrigo Egea</li>
+<li>Maria Gimena Binaghi</li>
+<li>Silvia Otaka</li>
+<li>Nicolas Clemente</li>
+<li>Juan Nieto</li>
+<li>Leonel Altamirano</li>
+<li>Josias Pazzelli</li>
+<li>Santiago Ludu</li>
+<li>German Furfori</li>
+<li>Fernanda Balduzzi</li>
+</ul>
