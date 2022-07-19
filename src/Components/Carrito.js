@@ -10,9 +10,11 @@ function Carrito() {
 
   let carrito = [];
 
-  return <div>
-    <AddToCarrito carrito="carrito" />
-  </div>;
+  return (
+    <div>
+      <AddToCarrito carrito="carrito" />
+    </div>
+  );
 }
 
 export default Carrito;
