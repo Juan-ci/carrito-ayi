@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ContadorCarrito from "./Components/ContadorCarrito";
+import { ContadorStock } from "./Components/ContadorStock";
 import "./App.css"
 
 function App() {
@@ -9,6 +10,7 @@ function App() {
   return (
     <div className="App">
       <ContadorCarrito contador={ contador } setContador={setContador}/>
+      <ContadorStock />
     </div>
   );
 }
