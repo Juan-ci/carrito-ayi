@@ -1,4 +1,5 @@
 import React from "react";
+import AddToCarrito from "./AddToCarrito";
 
 function Carrito() {
   const [name, setName] = useState("");
@@ -10,7 +11,7 @@ function Carrito() {
   let carrito = [];
 
   return <div>
-    <NuevoComponente carrito="carrito" />
+    <AddToCarrito carrito="carrito" />
   </div>;
 }
 

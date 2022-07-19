@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { producto1, producto2, producto3, producto4, producto5 } from "./productos"
 
 const AddToCarrito = (props) => {
     function handlerOnSubmit (e) {
@@ -6,10 +7,20 @@ const AddToCarrito = (props) => {
         props.carrito.push(document.getElementById('name').value); // cambiar por e.target (averiguar)
     }
   return (
-    <form onSubmit={handlerOnSubmit}>
+    <div>
+      <form onSubmit={handlerOnSubmit}>
         <label>Ingrese el nombre del producto: </label>
-        <input type="text" id="name"></input>
-    </form>
+        <select id = "Productos">
+          <option value={producto1.id}>{producto1.name}</option>
+          <option value={producto2.id}>{producto2.name}</option>
+          <option value={producto3.id}>{producto3.name}</option>
+          <option value={producto4.id}>{producto4.name}</option>
+          <option value={producto5.id}>{producto5.name}</option>
+        </select>
+        <button type="submit">Agregar</button>
+      </form>
+    </div>
+    
   )
 }
 
