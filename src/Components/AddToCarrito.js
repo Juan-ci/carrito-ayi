@@ -1,6 +1,6 @@
 import React from 'react'
 
-const NuevoComponente = (props) => {
+const AddToCarrito = (props) => {
     function handlerOnSubmit (e) {
         e.preventDefault();
         props.carrito.push(document.getElementById('name').value); // cambiar por e.target (averiguar)
@@ -13,4 +13,4 @@ const NuevoComponente = (props) => {
   )
 }
 
-export default NuevoComponente
+export default AddToCarrito
