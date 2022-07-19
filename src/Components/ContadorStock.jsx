@@ -12,11 +12,16 @@ export const ContadorStock = ({stock}) => {
 
   return (
     <div>
-        <h1>Cantidad Disponible</h1>
+        <h1>Cantidad Disponible: {stock}</h1> {/* Agregamos stock para mostrar*/}
         <div>
+          {/*
+            Botones redundante, los botones ya están en ContadorCarrito
             <button onClick={() => modifyAmount(-1)}>-</button>
-            <span>{amount}</span>
             <button onClick={() => modifyAmount(+1)}>+</button>
+            */
+          }
+            <span>{amount}</span>
+            
         </div>
         <button onClick={() =>console.log ()}>Agregar al Carrito</button>
     </div>

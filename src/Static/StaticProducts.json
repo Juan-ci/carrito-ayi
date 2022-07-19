@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "name": "Remera",
+        "description": "Remera manga corta",
+        "image":"http://frikio.site44.com/sites/frikio.com.ar/files/productcache/3/11/gamer_11.jpg",
+        "stock": 10,
+        "price": 1000.0
+    },
+    {
+        "id": 2,
+        "name": "Pantalon",
+        "description": "Pantalon de vestir",
+        "image":"https://www.latercera.com/resizer/sh_cCpOmr3sWCz3zsPOdPYSyKwE=/900x600/smart/cloudfront-us-east-1.images.arcpublishing.com/copesa/EVGVKYPDUNDX3GWRUQNFI3XKW4.jpg",
+        "stock": 50,
+        "price": 5000.0
+    },{
+        "id": 3,
+        "name": "Camisa",
+        "description": "Camisa manga larga",
+        "image":"https://milcamisas.com/wp-content/uploads/2019/04/CELESTE-UNICOLOR-MANGA-LARGA.jpg",
+        "stock": 25,
+        "price": 1500.0
+    },{
+        "id": 4,
+        "name": "Zapatillas",
+        "description": "Zapatillas urbanas",
+        "image":"https://img.freepik.com/foto-gratis/zapatos-moda-zapatillas_1203-7529.jpg?t=st=1658273412~exp=1658274012~hmac=b8f048e0893c62cf589777d23a755b59c9850cd7a1e0fd95731500d80f79aa49&w=1380",
+        "stock": 30,
+        "price": 3500.0
+    }
+]
