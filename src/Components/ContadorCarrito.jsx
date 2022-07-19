@@ -1,4 +1,5 @@
-import React from 'react'
+import React from 'react';
+import { Button, ButtonGroup } from '@mui/material'
 
 const ContadorCarrito = ({ contador, setContador }) => {
 
@@ -6,8 +7,10 @@ const ContadorCarrito = ({ contador, setContador }) => {
   return (
     <div>
         <p>Cantidad: { contador }</p>
-        <button type='text' onClick={() => setContador(--contador)}>-</button>
-        <button type='text' onClick={() => setContador(++contador)}>+</button>
+        <ButtonGroup variant="contained" aria-label="outlined primary button group" size='small'>
+          <Button onClick={() => setContador(--contador)}>-</Button>
+          <Button onClick={() => setContador(++contador)}>+</Button>
+        </ButtonGroup>
     </div>
   )
 }
