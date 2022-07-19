@@ -2,10 +2,10 @@ import React from 'react';
 import { producto1, producto2, producto3, producto4, producto5 } from "./productos"
 
 const AddToCarrito = (props) => {
-    function handlerOnSubmit (e) {
-        e.preventDefault();
-        props.carrito.push(document.getElementById('name').value); // cambiar por e.target (averiguar)
-    }
+  function handlerOnSubmit (e) {
+    e.preventDefault();
+    props.carrito.push(document.getElementById('name').value); // cambiar por e.target (averiguar)
+  }
   return (
     <div>
       <form onSubmit={handlerOnSubmit}>
@@ -20,7 +20,6 @@ const AddToCarrito = (props) => {
         <button type="submit">Agregar</button>
       </form>
     </div>
-    
   )
 }
 

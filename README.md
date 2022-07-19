@@ -7,7 +7,7 @@ Grupo A
 
 <h4> Colaboradores: </h4>
 <ul>
-<li>German Furfori</li>
-<li>Fernanda Balduzzi</li>
-<li>Rodrigo Egea</li>
+  <li>German Furfori</li>
+  <li>Fernanda Balduzzi</li>
+  <li>Rodrigo Egea</li>
 </ul>
