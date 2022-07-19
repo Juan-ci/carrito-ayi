@@ -11,11 +11,11 @@ const AddToCarrito = (props) => {
       <form onSubmit={handlerOnSubmit}>
         <label>Ingrese el nombre del producto: </label>
         <select id = "Productos">
-          <option value={producto1.id}>{producto1.name}</option>
-          <option value={producto2.id}>{producto2.name}</option>
-          <option value={producto3.id}>{producto3.name}</option>
-          <option value={producto4.id}>{producto4.name}</option>
-          <option value={producto5.id}>{producto5.name}</option>
+          <option value={producto1.id}>{producto1.nombre}</option>
+          <option value={producto2.id}>{producto2.nombre}</option>
+          <option value={producto3.id}>{producto3.nombre}</option>
+          <option value={producto4.id}>{producto4.nombre}</option>
+          <option value={producto5.id}>{producto5.nombre}</option>
         </select>
         <button type="submit">Agregar</button>
       </form>
