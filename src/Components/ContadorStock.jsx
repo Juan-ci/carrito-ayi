@@ -4,8 +4,8 @@ export const ContadorStock = ({stock}) => {
     const[amount,setAmount] = useState(1)
     const modifyAmount = (value) => {
         const newAmount = amount+value;
-         if (newAmount <= stock && newAmount >=1) 
-         { setAmount(amount+value);}
+          if (newAmount <= stock && newAmount >=1) 
+          { setAmount(amount+value);}
         
     }
 
