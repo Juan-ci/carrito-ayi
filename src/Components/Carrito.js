@@ -1,16 +1,17 @@
-import React from "react";
+import React, { useState} from "react";
+import AddToCarrito from "./AddToCarrito";
 
 function Carrito() {
-  const [name, setName] = useState("");
-  const [info, setInfo] = useState("");
-  const [stock, setStock] = useState();
-  const [value, setValue] = useState();
-  const [id, setId] = useState();
+  // const [name, setName] = useState("");
+  // const [info, setInfo] = useState("");
+  // const [stock, setStock] = useState();
+  // const [value, setValue] = useState();
+  // const [id, setId] = useState();
 
-  let carrito = [];
+  // let carrito = [];
 
   return <div>
-    <NuevoComponente carrito="carrito" />
+    <AddToCarrito carrito="carrito" />
   </div>;
 }
 
