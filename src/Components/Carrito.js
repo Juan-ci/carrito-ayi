@@ -1,4 +1,6 @@
-import React from "react";
+import React, { useState } from "react";
+
+//COMPONENTE NO USADO PORQUE FUE ENCARADO DE OTRA FORMA
 
 function Carrito() {
   const [name, setName] = useState("");
@@ -9,9 +11,11 @@ function Carrito() {
 
   let carrito = [];
 
-  return <div>
-    <NuevoComponente carrito="carrito" />
-  </div>;
+  return (
+    <div>
+      <NuevoComponente carrito="carrito" />
+    </div>
+  );
 }
 
 export default Carrito;

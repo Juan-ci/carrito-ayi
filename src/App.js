@@ -1,17 +1,18 @@
-import React, { useState } from "react";
-import ContadorCarrito from "./Components/ContadorCarrito";
-import { ContadorStock } from "./Components/ContadorStock";
-import "./App.css"
+import React from "react";
+import { Routes, Route } from "react-router-dom";
+
+import "./App.css";
+import About from "./Components/About";
+import Cart from "./Components/Cart";
+import ItemListContainer from "./Components/ItemListContainer";
 
 function App() {
-
-  const [contador, setContador] = useState(0);
-
   return (
-    <div className="App">
-      <ContadorCarrito contador={ contador } setContador={setContador}/>
-      <ContadorStock />
-    </div>
+    <Routes>
+      <Route path="/" element={<ItemListContainer />} />
+      <Route path="/cart" element={<Cart />} />
+      <Route path="/about" element={<About />} />
+    </Routes>
   );
 }
 
