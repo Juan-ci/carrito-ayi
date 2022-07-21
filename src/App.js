@@ -6,6 +6,8 @@ import "./App.css";
 import Product from "./Components/Product";
 import Navbar from "./Components/Navbar";
 import "./Components/ProductStyle.css"
+import Footer from "./Components/Footer";
+import PageTitle from "./Components/PageTitle";
 
 function App() {
 
@@ -18,8 +20,10 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar />
-      <section className="container">
+      <Navbar className="navbar" />
+      <PageTitle />   
+      <section className="container">  
+        
       {
         Products.map(elem => (<Product 
                                   name={elem.name}
@@ -34,7 +38,9 @@ function App() {
       <ContadorCarrito products={products}/> 
       */}
       {/* {<ContadorStock />] */}
+     
       </section>
+      <Footer />
     </div>
   );
 }
