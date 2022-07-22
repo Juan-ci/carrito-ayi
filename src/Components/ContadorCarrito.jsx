@@ -1,19 +1,25 @@
 import React, { useState } from 'react';
 import { Button, ButtonGroup } from '@mui/material'
 
-const ContadorCarrito = ({stock}) => {
+const ContadorCarrito = ({currentStock, setCurrentStock, originalStock}) => {
 
   let [counter, setCounter] = useState(0);
-
-  const removeProduct = () => {
-    counter !== 0 && setCounter(--counter);
+  
+  const removeProduct = () => { 
     
+    if(counter !== 0){
+      setCounter(--counter);
+      setCurrentStock(++currentStock)
+    }    
+    // counter !== 0 && setCounter(--counter);    
   }
 
-  //console.log(stock);
-
   const addProduct = () => {
-    counter < stock && setCounter(++counter);
+    if(counter < originalStock){
+      setCounter(++counter);
+      setCurrentStock(--currentStock)
+    }    
+    // counter < currentStock && setCounter(++counter);
   }
 
   return (

@@ -1,4 +1,4 @@
-import React, {  useEffect, useState } from "react";
+import React, {  useEffect, useState, useRef } from "react";
 import ContadorCarrito from "./Components/ContadorCarrito";
 import { ContadorStock } from "./Components/ContadorStock";
 import Products from './Static/StaticProducts.json';
@@ -12,6 +12,7 @@ import PageTitle from "./Components/PageTitle";
 function App() {
 
   const [products, setProducts] = useState([])
+  let buscadorRef = useRef('');
 
   useEffect(() => {
     setProducts(Products);
@@ -21,7 +22,8 @@ function App() {
     <div className="App">
 
       <Navbar className="navbar" />
-      <PageTitle />   
+      <PageTitle />
+      <input type="text" ref> </input>   
       <section className="container">  
         
       {
@@ -30,7 +32,7 @@ function App() {
                                   description={elem.description}
                                   image={elem.image}
                                   stock={elem.stock}
-                                  price={elem.price}
+                                  price={elem.price}                                  
                                 />))
       }
       {/* 

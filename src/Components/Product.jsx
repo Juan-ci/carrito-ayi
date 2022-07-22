@@ -1,4 +1,4 @@
-import React from 'react';
+
 import Card from '@mui/material/Card';
 import CardActions from '@mui/material/CardActions';
 import CardContent from '@mui/material/CardContent';
@@ -7,8 +7,13 @@ import Typography from '@mui/material/Typography';
 import ContadorCarrito from './ContadorCarrito';
 import IconButton from '@mui/material/IconButton';
 import AddShoppingCart from '@mui/icons-material/AddShoppingCart';
+import { useState} from 'react';
 
 const Product = ({ id, name, description, image, stock, price }) => {
+
+  const [currentStock, setCurrentStock] = useState(stock);
+  
+
   return (
 
     <div className="productCards">
@@ -33,11 +38,11 @@ const Product = ({ id, name, description, image, stock, price }) => {
             {description}
           </Typography>
           <Typography variant="body2" color="text.secondary">
-            Cantidad disponible: {stock}
+            Cantidad disponible: {currentStock}
           </Typography>
         </CardContent>
         <CardActions className="cardButtons">
-          <ContadorCarrito key={id} stock={stock} />
+          <ContadorCarrito key={id} currentStock={currentStock} setCurrentStock={setCurrentStock} originalStock ={stock}/>
           <IconButton style={{ color: 'white' }} aria-label="Agregar al carrito" id="shoppingCart">
             <AddShoppingCart />
           </IconButton>
