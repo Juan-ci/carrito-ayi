@@ -4,6 +4,8 @@ import { ContadorStock } from "./Components/ContadorStock";
 import Products from './Static/StaticProducts.json';
 import "./App.css";
 import Product from "./Components/Product";
+import Navbar from "./Components/Navbar";
+import "./Components/ProductStyle.css"
 
 function App() {
 
@@ -15,6 +17,9 @@ function App() {
 
   return (
     <div className="App">
+
+      <Navbar />
+      <section className="container">
       {
         Products.map(elem => (<Product 
                                   name={elem.name}
@@ -29,6 +34,7 @@ function App() {
       <ContadorCarrito products={products}/> 
       */}
       {/* {<ContadorStock />] */}
+      </section>
     </div>
   );
 }

@@ -5,16 +5,19 @@ import CardContent from '@mui/material/CardContent';
 import CardMedia from '@mui/material/CardMedia';
 import Typography from '@mui/material/Typography';
 import ContadorCarrito from './ContadorCarrito';
+import IconButton from '@mui/material/IconButton';
+import AddShoppingCart from '@mui/icons-material/AddShoppingCart';
 
 const Product = ({id, name, description, image, stock, price}) => {
   return (
-    <div>
+
+    <div className="productCards">
         <Card sx={{ maxWidth: 345 }}>
       <CardMedia
         component="img"
         height="140"
         image={image}
-        alt={name}
+        alt={name}        
       />
       <CardContent>
         <Typography gutterBottom variant="h5" component="div">
@@ -29,6 +32,9 @@ const Product = ({id, name, description, image, stock, price}) => {
       </CardContent>
       <CardActions>
         <ContadorCarrito key={id} stock={stock}/>
+        <IconButton color="primary" aria-label="Agregar al carrito">
+        <AddShoppingCart />
+        </IconButton>
       </CardActions>
     </Card>
     </div>
