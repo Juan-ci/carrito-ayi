@@ -2,6 +2,7 @@ import * as React from 'react';
 import Box from '@mui/material/Box';
 import Tabs from '@mui/material/Tabs';
 import Tab from '@mui/material/Tab';
+import logo from '../Images/logo-grupoB-black.png'
 
 function LinkTab(props) {
   return (
@@ -23,14 +24,15 @@ export default function Navbar() {
   };
 
   return (
-    <Box sx={{ width: '100%' } }>
-    <Box sx={{ bgcolor: '#a3a5ae' }}>
-      <Tabs value={value} onChange={handleChange} indicatorColor="primary" textColor="primary" aria-label="nav tabs example">
-        <LinkTab label="Home" href="/drafts" />
-        <LinkTab label="Page Two" href="/trash" />
-        <LinkTab label="Page Three" href="/spam" />
-      </Tabs>
-      </Box>
+    <Box sx={{ width: '100%' }}>
+      <div className='navItems'>
+        <img src={logo} className="ourLogo" alt="groupB-logo"></img>
+        <Tabs value={value} onChange={handleChange} indicatorColor="primary" aria-label="nav tabs example" className='navText'>
+          <LinkTab label="Home" href="/drafts" />
+          <LinkTab label="Page Two" href="/trash" />
+          <LinkTab label="Page Three" href="/spam" />
+        </Tabs>
+      </div>
     </Box>
   );
 }

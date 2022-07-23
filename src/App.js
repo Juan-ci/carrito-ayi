@@ -1,15 +1,17 @@
-import React, {  useEffect, useState } from "react";
-import ContadorCarrito from "./Components/ContadorCarrito";
-import { ContadorStock } from "./Components/ContadorStock";
+import React, { useEffect, useState, useRef } from "react";
 import Products from './Static/StaticProducts.json';
 import "./App.css";
 import Product from "./Components/Product";
 import Navbar from "./Components/Navbar";
 import "./Components/ProductStyle.css"
+import Footer from "./Components/Footer";
+import PageTitle from "./Components/PageTitle";
 
 function App() {
 
   const [products, setProducts] = useState([])
+  const searcherRef = useRef();
+  
 
   useEffect(() => {
     setProducts(Products);
@@ -18,8 +20,12 @@ function App() {
   return (
     <div className="App">
 
-      <Navbar />
-      <section className="container">
+      <Navbar className="navbar" />
+      <PageTitle />
+      
+      <input onChange={()=>console.log(searcherRef.current.value)} type="text" ref={searcherRef}/>
+      <section className="container">  
+        
       {
         Products.map(elem => (<Product 
                                   name={elem.name}
@@ -27,6 +33,7 @@ function App() {
                                   image={elem.image}
                                   stock={elem.stock}
                                   price={elem.price}
+                                  key={elem.id}                                 
                                 />))
       }
       {/* 
@@ -34,7 +41,9 @@ function App() {
       <ContadorCarrito products={products}/> 
       */}
       {/* {<ContadorStock />] */}
+     
       </section>
+      <Footer />
     </div>
   );
 }

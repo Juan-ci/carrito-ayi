@@ -28,5 +28,13 @@
         "image":"https://img.freepik.com/foto-gratis/zapatos-moda-zapatillas_1203-7529.jpg?t=st=1658273412~exp=1658274012~hmac=b8f048e0893c62cf589777d23a755b59c9850cd7a1e0fd95731500d80f79aa49&w=1380",
         "stock": 30,
         "price": 3500.0
+    },{
+        "id": 5,
+        "name": "Pollera",
+        "description": "Pollera larga floreada",
+        "image":"https://i.etsystatic.com/31411409/r/il/dc8630/3520741198/il_340x270.3520741198_6eeh.jpg",
+        "stock": 5,
+        "price": 6500.0
     }
+    
 ]
