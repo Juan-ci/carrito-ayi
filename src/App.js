@@ -5,14 +5,18 @@ import "./App.css";
 import About from "./Components/About";
 import Cart from "./Components/Cart";
 import ItemListContainer from "./Components/ItemListContainer";
+import NavBar from "./Components/Navbar";
 
 function App() {
   return (
-    <Routes>
-      <Route path="/" element={<ItemListContainer />} />
-      <Route path="/cart" element={<Cart />} />
-      <Route path="/about" element={<About />} />
-    </Routes>
+    <>
+      <NavBar />
+      <Routes>
+        <Route path="/" element={<ItemListContainer />} />
+        <Route path="/cart" element={<Cart />} />
+        <Route path="/about" element={<About />} />
+      </Routes>
+    </>
   );
 }
 

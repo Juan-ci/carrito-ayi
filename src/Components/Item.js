@@ -1,5 +1,7 @@
 import React from "react";
 
+import PropTypes from "prop-types";
+
 import CounterStock from "./CounterStock";
 
 const Item = ({ title, price, pictureUrl, description, stock }) => {
@@ -16,6 +18,15 @@ const Item = ({ title, price, pictureUrl, description, stock }) => {
       <CounterStock stock={stock} />
     </div>
   );
+};
+
+//Uso de PropTypes
+Item.propTypes = {
+  title: PropTypes.string.isRequired,
+  price: PropTypes.number.isRequired,
+  pictureUrl: PropTypes.string.isRequired,
+  description: PropTypes.string.isRequired,
+  stock: PropTypes.number.isRequired,
 };
 
 export default Item;

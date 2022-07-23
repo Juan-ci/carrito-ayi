@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from "react";
+import CircularProgress from "@mui/material/CircularProgress";
+import Box from "@mui/material/Box";
 
 import getData from "../Services/products";
 
@@ -19,7 +21,9 @@ const ItemListContainer = () => {
   return (
     <section className="item-list">
       {loading ? (
-        <span>Cargando datos...</span>
+        <Box sx={{ display: "flex" }}>
+          <CircularProgress />
+        </Box>
       ) : (
         listProducts.map(
           ({ id, title, price, pictureUrl, description, stock }) => {
