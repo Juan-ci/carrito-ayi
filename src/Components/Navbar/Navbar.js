@@ -15,6 +15,9 @@ import Toolbar from "@mui/material/Toolbar";
 import Typography from "@mui/material/Typography";
 import Button from "@mui/material/Button";
 
+import './styles.css';
+
+
 const drawerWidth = 240;
 const navItems = [
   { title: "Productos", link: "/" },
@@ -31,14 +34,14 @@ const NavBar = (props) => {
   };
 
   const drawer = (
-    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center" }}>
+    <Box onClick={handleDrawerToggle} sx={{ textAlign: "center"}}>
       <Typography variant="h6" sx={{ my: 2 }}>
-        GRUPO C
+        EQUIPO C
       </Typography>
       <Divider />
       <List>
         {navItems.map((item) => (
-          <Link to={item.link} key={item.title}>
+          <Link className='navbar-link' to={item.link} key={item.title}>
             <ListItem disablePadding>
               <ListItemButton sx={{ textAlign: "center" }}>
                 <ListItemText primary={item.title} />
@@ -55,7 +58,7 @@ const NavBar = (props) => {
 
   return (
     <Box sx={{ display: "flex" }}>
-      <AppBar component="nav">
+      <AppBar style={{ backgroundColor: '#252525' }} component="nav">
         <Toolbar>
           <IconButton
             color="inherit"
@@ -71,15 +74,17 @@ const NavBar = (props) => {
             component="div"
             sx={{ flexGrow: 1, display: { xs: "none", sm: "block" } }}
           >
-            GRUPO C
+            EQUIPO C
           </Typography>
+
           <Box sx={{ display: { xs: "none", sm: "block" } }}>
             {navItems.map((item) => (
-              <Link to={item.link} key={item.title}>
+              <Link className='navbar-link' to={item.link} key={item.title}>
                 <Button sx={{ color: "#fff" }}>{item.title}</Button>
               </Link>
             ))}
           </Box>
+
         </Toolbar>
       </AppBar>
       <Box component="nav">

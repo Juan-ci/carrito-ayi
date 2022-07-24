@@ -1,11 +1,11 @@
 import React from "react";
 import { Routes, Route } from "react-router-dom";
-
 import "./App.css";
-import About from "./Components/About";
-import Cart from "./Components/Cart";
-import ItemListContainer from "./Components/ItemListContainer";
-import NavBar from "./Components/Navbar";
+import About from "./Components/About/About";
+import Cart from "./Components/Cart/Cart";
+import Footer from "./Components/Footer/Footer";
+import ItemListContainer from "./Components/ItemListContainer/ItemListContainer";
+import NavBar from "./Components/Navbar/Navbar";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/cart" element={<Cart />} />
         <Route path="/about" element={<About />} />
       </Routes>
+      <Footer/>
     </>
   );
 }
