@@ -6,7 +6,7 @@ import getData from "../../Services/products";
 
 import { Container, Grid } from "@mui/material";
 import Item from "../Item/Item";
-import './styles.css'
+import "./styles.css";
 
 const ItemListContainer = () => {
   const [listProducts, setListProducts] = useState([]);
@@ -23,16 +23,18 @@ const ItemListContainer = () => {
   return (
     <section>
       {loading ? (
-        <Container  fixed>
-        <Box className="container-loading">
-          <CircularProgress />
-        </Box>
+        <Container fixed>
+          <Box className="container-loading">
+            <CircularProgress />
+          </Box>
         </Container>
       ) : (
-
-        <Container fixed sx={{padding:12}}>
-          <Grid container spacing={{ xs: 1, md: 2 }} columns={{ xs: 4, sm: 8, md: 12 }}>
-
+        <Container fixed sx={{ padding: 12 }}>
+          <Grid
+            container
+            spacing={{ xs: 1, md: 2 }}
+            columns={{ xs: 4, sm: 8, md: 12 }}
+          >
             {listProducts.map(
               ({ id, title, price, pictureUrl, description, stock }, index) => {
                 return (
@@ -49,10 +51,8 @@ const ItemListContainer = () => {
                 );
               }
             )}
-
           </Grid>
         </Container>
-
       )}
     </section>
   );
