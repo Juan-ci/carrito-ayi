@@ -6,11 +6,12 @@ import Navbar from "./Components/Navbar";
 import "./Components/ProductStyle.css"
 import Footer from "./Components/Footer";
 import PageTitle from "./Components/PageTitle";
+import SearchRef from "./Components/SearchRef"
 
 function App() {
 
   const [products, setProducts] = useState([])
-  const searcherRef = useRef();
+
   
 
   useEffect(() => {
@@ -22,8 +23,8 @@ function App() {
 
       <Navbar className="navbar" />
       <PageTitle />
+      <SearchRef />
       
-      <input onChange={()=>console.log(searcherRef.current.value)} type="text" ref={searcherRef}/>
       <section className="container">  
         
       {
