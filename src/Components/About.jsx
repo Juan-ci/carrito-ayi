@@ -3,11 +3,13 @@ import React from 'react'
 const About = () => {
   return (
     <div>
-        <ul>
-            <li>Jossias Pazzeli</li>
+      <h1 className='membersTitle'>Group B Members</h1>
+
+        <ul className='integrantes'>
+            <li>Jossias Pazzelli</li>
             <li>Juan Cruz Nieto</li>
             <li>Silvia Otaka</li>
-            <li>Gimena</li>
+            <li>Maria Gimena Binaghi </li>
             <li>Juan Ignacio Caballero</li>
         </ul>
     </div>

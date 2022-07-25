@@ -18,7 +18,6 @@ const Nav = () => {
         <ul
           value={value}
           onChange={handleChange}
-          indicatorColor="primary"
           aria-label="nav tabs example"
           className="navText"
         >

@@ -8,6 +8,7 @@ import ContadorCarrito from './ContadorCarrito';
 import IconButton from '@mui/material/IconButton';
 import AddShoppingCart from '@mui/icons-material/AddShoppingCart';
 import { useState, useRef} from 'react';
+import PageTitle from './PageTitle';
 
 const Product = ({ id, name, description, image, stock, price }) => {
 
@@ -18,8 +19,9 @@ const Product = ({ id, name, description, image, stock, price }) => {
   };
 
   return (
-
+       
     <div className="productCards">
+       
       <Card sx={{
         maxWidth: 345,
         ':hover': {
@@ -52,6 +54,7 @@ const Product = ({ id, name, description, image, stock, price }) => {
         </CardActions>
       </Card>
     </div>
+    
   )
 }
 

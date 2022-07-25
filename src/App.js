@@ -24,12 +24,14 @@ function App() {
       {/* <Navbar className="navbar" /> */}
       <Nav className="navbar"/>
       <PageTitle />
-      <SearchRef />
-      <Routes className="container">
+      
+      <section className="container">
+      <Routes >
         <Route index element={<Home />} />
         <Route
           path="/products"
-          element={Products.map((elem) => (
+          element={            
+            Products.map((elem) => (            
             <Product
               name={elem.name}
               description={elem.description}
@@ -42,7 +44,8 @@ function App() {
         />
         <Route path="/about" element={<About />} />
       </Routes>
-
+      </section>
+      <SearchRef />
       <section>
         {/* 
       Comentado ya que se agregó en el componente products dentro de Card

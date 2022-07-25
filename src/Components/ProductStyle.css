@@ -47,10 +47,11 @@ body {
   padding: 10px;
 }
 
-.navbar {
-  background-color: #1976d2;
-  color: white;
-}
+/* .navbar {
+  background-color: #19d228;
+  color: white; 
+} */
+
 
 .cardButtons {
   margin-left: 25px;
@@ -71,7 +72,31 @@ body {
 .navItems {
   padding-left: 30px;
   display: flex;
-  background-color: #ffffff;
+  background-color: #1976d2;
+}
+
+.navItems li{
+  display: inline;
+}
+
+.integrantes{
+  font-size: 35px;
+  color: #1976d2; 
+}
+
+.membersTitle{
+  font-size: 40px;
+}
+
+a{
+  color:rgb(255, 255, 255);
+  text-decoration: none;
+  padding-right: 25px;
+  font-size: 22px;
+}
+
+li{
+  list-style: none
 }
 
 .searcherLabel {
