@@ -1,26 +1,110 @@
-
-.container{
-
-    background-color:antiquewhite ;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    height: 100vh;
-    flex-wrap: wrap;
+body {
+  background-color: antiquewhite;
 }
 
-.productCards :hover{
-    transform: scale(1.1);
-    transition: 0.5s;
-   
-
-}
-.productCards{
-    border-radius: 10px;
-    padding: 30px;
+.pageTitle {
+  color: #202020;
+  font-size: 40px;
+  text-transform: uppercase;
+  padding-bottom: 10px;
+  line-height: 2em;
+  font-family: arial;
 }
 
-.cardSS :hover{
-    box-shadow: 10px 5px 5px black;
+.pageTitle:after {
+  content: "";
+  border-bottom: 3px solid #1976d2;
+  width: 8%;
+  height: 20px;
+  margin: 18px 0px 0 5px;
+  position: absolute;
 }
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+.productCards {
+  border-radius: 10px;
+  margin: 30px;
+  box-shadow: 5px 10px 8px #424242;
+  width: 250px;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #1976d2;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.navbar {
+  background-color: #1976d2;
+  color: white;
+}
+
+.cardButtons {
+  margin-left: 25px;
+}
+
+#shoppingCart {
+  border-radius: 5px;
+  background-color: #1976d2;
+  margin-top: 45px;
+  margin-left: 60px;
+}
+
+.ourLogo {
+  height: 60px;
+  padding-right: 45px;
+}
+
+.navItems {
+  padding-left: 30px;
+  display: flex;
+  background-color: #ffffff;
+}
+
+.searcherLabel {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  margin-top: 15px;
+  transition: all 0.3s;
+  transform: translateX(0rem);
+  
+}
+
+.searcherInput {
+  font-family: Arial, Helvetica, sans-serif;
+  color: #333;
+  font-size: 18px;
+  margin: 0 auto;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: rgb(255, 255, 255);
+  border: none;
+  width: 20%;
+  display: block;
+  border: 2px solid transparent;
+  border-color: #1976d2;
+  transition: all 0.3s;
+}
+
+.searcherInput:active :focus{
+    border-color: #1976d2;
+}
+
+.searcherInput:placeholder-shown + .searcherLabel {
+  opacity: 0;
+  visibility: hidden;
+  -webkit-transform: translateY(-4rem);
+  transform: translateY(-4rem);
+  border: 2px solid transparent;
+} 
