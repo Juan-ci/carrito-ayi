@@ -2,8 +2,9 @@ import React, { useState } from 'react';
 import { Button, ButtonGroup } from '@mui/material'
 
 const ContadorCarrito = ({currentStock, setCurrentStock, originalStock, counterRef}) => {
+  //llamar al hooke acá
 
-  let [counter, setCounter] = useState(0);
+  /*let [counter, setCounter] = useState(0);
   
   const removeProduct = () => { 
     
@@ -12,7 +13,7 @@ const ContadorCarrito = ({currentStock, setCurrentStock, originalStock, counterR
       setCurrentStock(++currentStock);
       counterRef.current -= 1 ; 
     }    
-    // counter !== 0 && setCounter(--counter);    
+    //counter !== 0 && setCounter(--counter);    
   }
 
   const addProduct = () => {
@@ -21,8 +22,8 @@ const ContadorCarrito = ({currentStock, setCurrentStock, originalStock, counterR
       setCurrentStock(--currentStock);
       counterRef.current += 1 ; 
     }    
-    // counter < currentStock && setCounter(++counter);
-  }
+    //counter < currentStock && setCounter(++counter);
+  }*/
 
   return (
     <div>
